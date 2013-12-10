@@ -6,7 +6,7 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="text" name = "firstname" value = "arjan"/>
+					<input type="text" name = "firstname"/>
 				</td>
 			</tr>
 			
