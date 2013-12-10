@@ -1,5 +1,6 @@
 <?php
-require_once "class/LoginClass.php";
+require_once("class/LoginClass.php");
+require_once("class/SessionClass.php");
 	//check of beide velden zijn ingevoerd
 	if ( !empty($_POST['email']) && !empty($_POST['password']))
 	{
@@ -12,11 +13,15 @@ require_once "class/LoginClass.php";
 			//verwijs door naar de homepage van degeregisteerde gebruiker
 			//echo "De combinatie bestaat";exit();
 			
-			
+			/*Roep de static method find_user_by_email_password aan uit de LoginClass
+			 * Deze method geeft precies 1 LoginClass-Object terug. Je kunt via dit object de properties
+			 * opvragen zoals:get_id(), get_email(), get_password(), enz....
+			 */
 			$user_object = LoginClass::find_user_by_email_password($_POST['email'],
 																   $_POST['password']);
 				
-			
+			$session->login(find_user_by_email_password($_POST['email'],
+														$_POST['password']));
 			$_SESSION['id'] = $user_object->get_id();;
 			$_SESSION['userrole'] = $user_object->get_userrole();
 			
@@ -25,11 +30,17 @@ require_once "class/LoginClass.php";
 				case 'root':
 					header("location:index.php?content=root_homepage");
 				break;
-				case 'admin':
+				case 'administator':
 					header("location:index.php?content=admin_homepage");
 				break;
 				case'customer':
 					header("location:index.php?content=downloadpage");
+				break;
+				case'developer':
+					header("location:index.php?content=developer_homepage");
+				break;
+				case'photographer':
+					header("location:index.php?content=photographer_homepage");
 				break;
 			}
 		}

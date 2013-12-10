@@ -25,12 +25,18 @@
 							<a href ='index.php?content=faq'> faq</a>
 							</li>";
 				break;
-				case 'admin':
+				case 'administrator':
 				
 				break;
 				case 'root':
-				
+					echo"<li><a href='index.php?content=developer_homepage>dev-home</a></li>";
+					
 				break;
+				case'developer':
+					echo"<li>
+							<a href=''>extra devlink</a>;
+						 </li>";
+					break;
 			}
 	}
 	else
