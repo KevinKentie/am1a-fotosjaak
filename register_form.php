@@ -82,51 +82,12 @@
 					<input type="radio" name = "sex"  value="female">vrouw
 				</td>
 			</tr>
-			
-			<tr>
-				<td>Burgerlijke staat</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="radio" name = "marital_status"  value="maried">getrouwd<br>
-					<input type="radio" name = "marital_status"  value="not maried">niet getrouwd
-				</td>
-			</tr>
-			
-			<tr>
-				<td>Genre favoriete game</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="text" name = "genre_favorite_game" />
-				</td>
-			</tr>
-			
-			<tr>
-				<td>Favoriete spel</td>
-			</tr>
-			
-			<tr>
-				<td>
-					<input type="text" name = "favoritegame" />
-				</td>
-			</tr>
-			
 			<tr>
 				<td>Email</td>
 			</tr>
 			<tr>
 				<td>
 					<input type="email" name = "email" />
-				</td>
-			</tr>
-			
-			<tr>
-				<td>Wachtwoord</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="password" name = "password" />
 				</td>
 			</tr>
 			

@@ -26,6 +26,9 @@
 							</li>";
 				break;
 				case 'administrator':
+					echo"<li>
+							<a href=''>extra devlink</a>
+						 </li>";
 				
 				break;
 				case 'root':
@@ -34,7 +37,13 @@
 				break;
 				case'developer':
 					echo"<li>
-							<a href=''>extra devlink</a>;
+							<a href=''>extra devlink</a>
+						 </li>";
+					break;
+					
+				case'photographer':
+					echo"<li>
+							<a href=''>extra photolink</a>
 						 </li>";
 					break;
 			}
