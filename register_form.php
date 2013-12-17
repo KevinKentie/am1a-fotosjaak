@@ -34,24 +34,15 @@
 			
 			<tr>
 				<td>
-					<input type="text" name = "residence" />
+					<input type="text" name = "address" />
 				</td>
 			</tr>
-			
-			    <td>Straat</td>
-			</td>
-			
 				<tr>
-				    <td>
-				        <input type="text" name="street" />
-					</td>
-					
-					<tr>
 			    <td>Huisnummer</td>
 			</td>
 				<tr>
 				    <td>
-				        <input type="text" name="housenumber" />
+				        <input type="text" name="addressnumber" />
 					</td>
             </tr>				
 			
@@ -63,25 +54,14 @@
 				        <input type="text" name="zipcode" />
 					</td>
             </tr>	
-			
-			<tr>
-				<td>Geboortedatum</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="date" min="1973" max="2013" name="date_of_birth"/></td>
-				</td>
-			</tr>
-			
-			<tr>
-				<td>Geslacht</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="radio" name = "sex"  value="male">man<br>
-					<input type="radio" name = "sex"  value="female">vrouw
-				</td>
-			</tr>
+            		<tr>
+			    <td>Land</td>
+			</td>
+				<tr>
+				    <td>
+				        <input type="text" name="country" />
+					</td>
+            </tr>	
 			<tr>
 				<td>Email</td>
 			</tr>
@@ -90,7 +70,22 @@
 					<input type="email" name = "email" />
 				</td>
 			</tr>
-			
+					<tr>
+			    <td>Telefoon:</td>
+			</td>
+				<tr>
+				    <td>
+				        <input type="text" name="telephonenumber" />
+					</td>
+            </tr>
+					<tr>
+			    <td>Mobiel nummer</td>
+			</td>
+				<tr>
+				    <td>
+				        <input type="text" name="mobilephonenumber" />
+					</td>
+            </tr>
 		
 		
 				<td><input type = "submit" name = "submit" value = "verstuur" /></td>
